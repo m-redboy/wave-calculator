@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+        <div class="wave"></div>
+     </div>
+  <div class="calculator " >
+    <h2>Calculator</h2>
+    <div class="input-display" id="display">0</div>
+    <div class="calculator-grid">
+      <div class="btn" onclick="appendToDisplay('7')">7</div>
+      <div class="btn" onclick="appendToDisplay('8')">8</div>
+      <div class="btn" onclick="appendToDisplay('9')">9</div>
+      <div class="btn operator" onclick="appendToDisplay('/')">/</div>
+      <div class="btn" onclick="appendToDisplay('4')">4</div>
+      <div class="btn" onclick="appendToDisplay('5')">5</div>
+      <div class="btn" onclick="appendToDisplay('6')">6</div>
+      <div class="btn operator" onclick="appendToDisplay('*')">*</div>
+      <div class="btn" onclick="appendToDisplay('1')">1</div>
+      <div class="btn" onclick="appendToDisplay('2')">2</div>
+      <div class="btn" onclick="appendToDisplay('3')">3</div>
+      <div class="btn operator" onclick="appendToDisplay('-')">-</div>
+      <div class="btn" onclick="appendToDisplay('0')">0</div>
+      <div class="btn" onclick="appendToDisplay('.')">.</div>
+      <div class="btn equal" onclick="calculate()">=</div>
+      <div class="btn operator" onclick="appendToDisplay('+')">+</div>
+    </div>
+    <div class="btn clear" onclick="clearDisplay()">Clear</div>
+  </div>
+<script src="./script.js"></script>
+</body>
+</html>
